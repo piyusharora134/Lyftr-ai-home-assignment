@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Lyftr AI — Full-Stack LLM Chatbot with Key Failover & Response Caching
 
 A resilient, multi-turn AI chatbot built with **React**, **FastAPI**, **LiteLLM**, and **SQLite**, featuring automatic multi-key failover, response caching, per-request token tracking, and Dockerized deployment.
@@ -150,3 +151,6 @@ curl -i -X POST http://localhost:8000/chat \
 - **Failover Test Lab in the UI:** A subtle dropdown in the header bar lets reviewers trigger `key_1=429`, `key_1=500`, or `*=429` directly from the browser UI without needing `curl` (defaults to `None` for normal traffic).
 - **Runtime `env.js` injection in Docker:** The Nginx frontend container injects `API_BASE_URL` at container startup while still supporting build-time `VITE_API_BASE_URL` for static hosts like Vercel/Netlify.
 - **Per-key model mapping (`LLM_MODELS`):** Optional support for assigning distinct models per key (e.g., primary `gemini/gemini-2.0-flash`, backup `openai/gpt-4o-mini`) in addition to single-model multi-key pools.
+=======
+# Lyftr-ai-home-assignment
+>>>>>>> b4b9c46aec6680bc1c3c82abf61077382f4bf1df
